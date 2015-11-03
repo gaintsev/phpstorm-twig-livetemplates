@@ -13,7 +13,6 @@ Copy `Twig.xml` to the following directory:
 
 and restart PhpStorm.
 
-
 ##Some examples of use
 ###Include
 <img alt="Twig LiveTemplates for PhpStorm" src="https://raw.githubusercontent.com/gaintsev/phpstorm-twig-livetemplates/master/demo/include.gif">
