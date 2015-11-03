@@ -1,0 +1,262 @@
+<templateSet group="Twig">
+  <template name="autoescape" value="{% autoescape '$VAR0$' %}&#10;    $END$&#10;{% endautoescape %}" description="Whether automatic escaping is enabled or not, you can mark a section of a template to be escaped or not by using the autoescape tag" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="block" value="{% block $VAR0$ %}&#10;    $END$&#10;{% endblock %}" description="When a template uses inheritance and if you want to print a block multiple times, use the block function" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="parent" value="{{ parent() }}" description="When a template uses inheritance, it's possible to render the contents of the parent block when overriding a block by using the parent function" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="use" value="{% use '$VAR0$' with $VAR1$ as $VAR2$ %}" description="Horizontal reuse is a way to achieve the same goal as multiple inheritance, but without the associated complexity" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="extends" value="{% extends '$VAR0$' %}" description="The extends tag can be used to extend a template from another one." toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="do" value="{% do $VAR0$ %}" description="The do tag works exactly like the regular variable expression ({{ ... }}) just that it doesn't print anything" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="embed" value="{% embed '$VAR0$' %}&#10;    $END$&#10;{% endembed %}" description="The embed tag combines the behaviour of include and extends" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="filter" value="{% filter $VAR0$ %}&#10;    $END$&#10;{% endfilter %}" description="Filter sections allow you to apply regular Twig filters on a block of template data. Just wrap the code in the special filter section" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="flush" value="{% flush %}" description="The flush tag tells Twig to flush the output buffer" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="for" value="{% for $VAR0$ in $VAR1$ %}&#10;    $END$&#10;{% endfor %}" description="Loop over each item in a sequence" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="macro" value="{% macro $NAME$($VAR0$, $VAR1$) %}&#10;    $END$&#10;{% endmacro %}" description="Macros are comparable with functions in regular programming languages" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="if" value="{% if $STATEMENT$ %}&#10;    $END$&#10;{% endif %}" description="The if statement in Twig is comparable with the if statements of PHP" toReformat="true" toShortenFQNames="true">
+    <variable name="STATEMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ifelse" value="{% if $STATEMENT$ %}&#10;    $THEN$&#10;{% else %}&#10;    $END$&#10;{% endif %}" description="The if statement in Twig is comparable with the if statements of PHP" toReformat="true" toShortenFQNames="true">
+    <variable name="STATEMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="THEN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="import" value="{% import '$TEMPLATE$' as $VAR0$ %}" description="Twig supports putting often used code into macros. These macros can go into different templates and get imported from there" toReformat="true" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="include" value="{% include '$TEMPLATE$' %}" description="The include statement includes a template and returns the rendered content of that file into the current namespace" toReformat="true" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="sandbox" value="{% sandbox %}&#10;    $END$&#10;{% endsandbox %}" description="The sandbox tag can be used to enable the sandboxing mode for an included template, when sandboxing is not enabled globally for the Twig environment" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="set" value="{% set $VAR$ = '$VALUE$' %}" description="Assign value to variable" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="spaceless" value="{% spaceless %}&#10;    $END$&#10;{% endspaceless %}" description="Use the spaceless tag to remove whitespace between HTML tags, not whitespace within HTML tags or whitespace in plain text" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="verbatim" value="{% verbatim %}&#10;    $END$&#10;{% endverbatim %}" description="The verbatim tag marks sections as being raw text that should not be parsed." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="abs" value="{{ $NUMBER$|abs }}" description="The abs filter returns the absolute value" toReformat="true" toShortenFQNames="true">
+    <variable name="NUMBER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="capitalize" value="{{ $TEXT$|capitalize }}" description="The capitalize filter capitalizes a value. The first character will be uppercase, all others lowercase" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="convert_encoding" value="{{ $DATA$|convert_encoding('$OUTPUT_CHARSET$', '$INPIT_CHARSET$') }}" description="The convert_encoding filter converts a string from one encoding to another. The first argument is the expected output charset and the second one is the input charset" toReformat="true" toShortenFQNames="true">
+    <variable name="DATA" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OUTPUT_CHARSET" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INPIT_CHARSET" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="date" value="{{ $VAR$|date('$FORMAT$') }}" description="The date filter formats a date to a given format" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="&quot;'now'&quot;" alwaysStopAt="true" />
+    <variable name="FORMAT" expression="" defaultValue="&quot;m/d/Y&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="date_modify" value="{{ $VAR0$|date_modify('$VAR1$')|date('$VAR2$') }}" description="The date_modify filter modifies a date with a given modifier string" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="&quot;+1 day&quot;" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="&quot;m/d/Y&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="default" value="{{ $VAR$|default('$END$') }}" description="The default filter returns the passed default value if the value is undefined or empty, otherwise the value of the variable" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="escape" value="{{ $VAR$|escape }}" description="The escape filter escapes a string for safe insertion into the final output. It supports different escaping strategies depending on the template context" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="first" value="{{ $ARRAY$|first }}" description="The first filter returns the first &quot;element&quot; of a sequence, a mapping, or a string" toReformat="true" toShortenFQNames="true">
+    <variable name="ARRAY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="format" value="{{ '$VAR0$'|format($VAR1$) }}" description="The format filter formats a given string by replacing the placeholders (placeholders follows the sprintf notation)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;%s&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="join" value="{{ $ARRAY$|join }}" description="The join filter returns a string which is the concatenation of the items of a sequence" toReformat="true" toShortenFQNames="true">
+    <variable name="ARRAY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="json_encode" value="{{ $DATA$|json_encode() }}" description="The json_encode filter returns the JSON representation of a value" toReformat="true" toShortenFQNames="true">
+    <variable name="DATA" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="last" value="{{ $ARRAY$|last }}" description="The last filter returns the last &quot;element&quot; of a sequence, a mapping, or a string" toReformat="true" toShortenFQNames="true">
+    <variable name="ARRAY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="lower" value="{{ $TEXT$|lower }}" description="The lower filter converts a value to lowercase" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="nl2br" value="{{ $TEXT$|nl2br }}" description="The nl2br filter inserts HTML line breaks before all newlines in a string" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="raw" value="{{ $TEXT$|raw }}" description="The raw filter marks the value as being &quot;safe&quot;, which means that in an environment with automatic escaping enabled this variable will not be escaped if raw is the last filter applied to it" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="replace" value="{{ '%$VAR0$%'|replace({'%$VAR0$%': $VAR1$}) }}" description="The replace filter formats a given string by replacing the placeholders (placeholders are free-form)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="&quot;text&quot;" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="reverse" value="{{ $ARRAY$|reverse }}" description="The reverse filter reverses a sequence, a mapping, or a string" toReformat="true" toShortenFQNames="true">
+    <variable name="ARRAY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="round" value="{{ $NUMBER$|round }}" description="The round filter rounds a number to a given precision" toReformat="true" toShortenFQNames="true">
+    <variable name="NUMBER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="striptags" value="{{ $HTML$|striptags }}" description="The striptags filter strips SGML/XML tags and replace adjacent whitespace by one space" toReformat="true" toShortenFQNames="true">
+    <variable name="HTML" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="title" value="{{ $TEXT$|title }}" description="The title filter returns a titlecased version of the value. Words will start with uppercase letters, all remaining characters are lowercase" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="trim" value="{{ $STRING$|trim('$END$') }}" description="The trim filter strips whitespace (or other characters) from the beginning and end of a string" toReformat="true" toShortenFQNames="true">
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="upper" value="{{ $STRING$|upper }}" description="The upper filter converts a value to uppercase" toReformat="true" toShortenFQNames="true">
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="url_encode" value="{{ $URL$|url_encode }}" description="The url_encode filter percent encodes a given string as URL segment or an array as query string" toReformat="true" toShortenFQNames="true">
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+</templateSet>
