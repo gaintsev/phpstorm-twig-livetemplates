@@ -259,4 +259,12 @@
       <option name="Twig" value="true" />
     </context>
   </template>
+  <template name="includewith" value="{% include '$TEMPLATE$' with {'$VAR$': '$VALUE$'} %}" description="The include statement includes a template and returns the rendered content of that file into the current namespace" toReformat="true" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
 </templateSet>
